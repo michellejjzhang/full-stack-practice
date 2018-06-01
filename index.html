@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    <script data-require="jquery@1.12.4" data-semver="1.12.4" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src = "oldVersion/viewModel.js"></script>
+</head>
+
+<style>
+    .buttons {
+        background-color: #6C91BF ;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 5px 7px;
+        margin-bottom: 10px;
+    }
+    .text {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    div {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    table{
+        border: 3px solid grey;
+    }
+    .showForm{
+        display: block;
+    }
+    .hideForm{
+        display: none;
+    }
+</style>
+
+<body>
+
+<h1 class = "text">Employee List</h1>
+
+<div class = "userList">
+    <table id ="employeeInfo" class = "text" style = "width: 25%; border: 3px grey" align="center">
+        <tr>
+            <th>Employee Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </table>
+</div>
+
+<div id = "updateEmployeeDiv" class = "hideForm">
+    <form class = "text" id = "updateUserForm">
+        Update employee name:<br>
+        <input type = "text" name = "name" id = "name"><br>
+        Update employee age:<br>
+        <input type = "text" name = "age" id = "age"><br>
+        <input type = "button" class = "buttons" value = "Submit" id = "updateEmployeeS">
+    </form>
+</div>
+
+<div id = "buttonDiv">
+    <button id = "addEmployeeB" class="buttons">Add Employee</button>
+</div>
+
+<div id = "addEmployeeDiv" class = "hideForm">
+    <form class = "text" id = "addEmployeeForm">
+        Employee name:<br>
+        <input type = "text" name = "name" id = "name"><br>
+        Employee age:<br>
+        <input type = "text" name = "age" id = "age"><br>
+        <input type = "button" class = "buttons" value = "Submit" id = "addEmployeeS">
+    </form>
+</div>
+</body>
+</html>
